@@ -3,6 +3,8 @@ This is a LaTeX template for the Marie Sklodowska-Curie Individual Fellowships a
 Disclaimer: I do not offer any guaratees about this template. 
 In particular, I cannot assure you that it fits the required guidelines (although I have tried to make it so).
 
+Remember that this time, only literature references are permitted as footnotes, and all other references should be displayed as hyperlinks.
+
 Feel free to open a pull request if you would like to improve this template!
 
 
