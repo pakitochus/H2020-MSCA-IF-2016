@@ -1,5 +1,7 @@
 This is a LaTeX template for the Marie Sklodowska-Curie Individual Fellowships application (H2020-MSCA-IF-2017).
 
+Forked from [http://github.com/sean-chester/H2020-MSCA-IF-2016](sean-chester/H2020-MSCA-IF-2016) and updated with the information at 2017 templates.
+
 Disclaimer: I do not offer any guaratees about this template. 
 In particular, I cannot assure you that it fits the required guidelines (although I have tried to make it so).
 
