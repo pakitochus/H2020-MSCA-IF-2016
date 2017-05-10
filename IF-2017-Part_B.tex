@@ -57,41 +57,41 @@
 % Taken from http://tex.stackexchange.com/a/249422/84485
 \makeatletter
 \renewcommand\footnotesize{%
-   \@setfontsize\footnotesize\@ixpt{8}%
-   \abovedisplayskip 8\p@ \@plus2\p@ \@minus4\p@
-   \abovedisplayshortskip \z@ \@plus\p@
-   \belowdisplayshortskip 4\p@ \@plus2\p@ \@minus2\p@
-   \def\@listi{\leftmargin\leftmargini
-               \topsep 4\p@ \@plus2\p@ \@minus2\p@
-               \parsep 2\p@ \@plus\p@ \@minus\p@
-               \itemsep \parsep}%
-   \belowdisplayskip \abovedisplayskip
+	\@setfontsize\footnotesize\@ixpt{8}%
+	\abovedisplayskip 8\p@ \@plus2\p@ \@minus4\p@
+	\abovedisplayshortskip \z@ \@plus\p@
+	\belowdisplayshortskip 4\p@ \@plus2\p@ \@minus2\p@
+	\def\@listi{\leftmargin\leftmargini
+		\topsep 4\p@ \@plus2\p@ \@minus2\p@
+		\parsep 2\p@ \@plus\p@ \@minus\p@
+		\itemsep \parsep}%
+	\belowdisplayskip \abovedisplayskip
 }
 \makeatother
 
 \hypersetup{
-    pdftitle={H2020-MSCA-IF-2016},    % title
-    pdfauthor={},
-    colorlinks=true,
-    citecolor=black,
-    linkcolor=black,
-    urlcolor=blue
-  }
+	pdftitle={H2020-MSCA-IF-2017},    % title
+	pdfauthor={},
+	colorlinks=true,
+	citecolor=black,
+	linkcolor=black,
+	urlcolor=blue
+}
 
 \newcommand{\markStartPageLimit}{%
-\begin{flushright}
-\textcolor{red}{{\large {\bf START PAGE COUNT \--- MAX 10 PAGES~~~~~}}\\
-\rule{\textwidth}{0.5mm}
-}\vspace{-.5cm}
-\end{flushright}
+	\begin{flushright}
+		\textcolor{red}{{\large {\bf START PAGE COUNT \--- MAX 10 PAGES~~~~~}}\\
+			\rule{\textwidth}{0.5mm}
+		}\vspace{-.5cm}
+	\end{flushright}
 }
 \newcommand{\markEndPageLimit}{%
-\vfill
-\begin{flushright}
-\textcolor{red}{{\large {\bf STOP PAGE COUNT \--- MAX 10 PAGES~~~~~}}\\
-\rule{\textwidth}{0.5mm}
-}
-\end{flushright}
+	\vfill
+	\begin{flushright}
+		\textcolor{red}{{\large {\bf STOP PAGE COUNT \--- MAX 10 PAGES~~~~~}}\\
+			\rule{\textwidth}{0.5mm}
+		}
+	\end{flushright}
 }
 
 
@@ -103,8 +103,7 @@
 
 \pagestyle{fancy}
 \fancyhead{}
-\fancyhead[C]{\color{gray}{\ac{PropAcronym}\xspace\xspace - Standard EF / CAR / RI / GF\\
-(Delete as appropriate and include as header on each page)}}
+\fancyhead[C]{\color{gray}{\ac{ACRO}\xspace\xspace - Standard EF / CAR / RI / SE / GF}}
 \fancyfoot{}
 \fancyfoot[C]{\color{gray}{Part B - Page \thepage~of \pageref*{sec:endpage}}}
 \resetHeadWidth
@@ -118,16 +117,16 @@
 \makeatletter
 \let\oldcontentsline\contentsline
 \def\contentsline#1#2{%
-  \expandafter\ifx\csname l@#1\endcsname\l@section
-    \expandafter\@firstoftwo
-  \else
-    \expandafter\@secondoftwo
-  \fi
-  {%
-    \oldcontentsline{#1}{\MakeUppercase{#2}}%
-  }{%
-    \oldcontentsline{#1}{#2}%
-  }%
+	\expandafter\ifx\csname l@#1\endcsname\l@section
+	\expandafter\@firstoftwo
+	\else
+	\expandafter\@secondoftwo
+	\fi
+	{%
+		\oldcontentsline{#1}{\MakeUppercase{#2}}%
+	}{%
+		\oldcontentsline{#1}{#2}%
+	}%
 }
 \makeatother
 
@@ -137,19 +136,19 @@
 %\acl{PropAcronym} gives long form of acronym, probably not used {in second set of braces}
 %\acf{PropAcronym} gives both
 \begin{acronym}
-\acro{IF}{Individual Fellowships}
-\acro{PropAcronym}[PROPOSAL ACRONYM]{This is my proposal's acronym}
+	\acro{IF}{Individual Fellowships}
+	\acro{ACRO}[ACRO]{Acronym of the proposal.}
 \end{acronym}
 
 \begin{document}
-%mark proposal acronym as used, such that the short-hand form is always used by default.
-\acused{PropAcronym}
-%\begin{linenumbers}
-
-\include{doc1}
-\include{doc2}
-
-%\end{linenumbers}
+	%mark proposal acronym as used, such that the short-hand form is always used by default.
+	\acused{PropAcronym}
+	%\begin{linenumbers}
+	
+	\include{doc1}
+	\include{doc2}
+	
+	%\end{linenumbers}
 \end{document}
 
 
